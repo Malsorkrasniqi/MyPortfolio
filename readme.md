@@ -1,31 +1,11 @@
-# Simple Tailwind CSS Starter
+# Malsor's Portfolio
 
-This is an extremley simple setup to develop Tailwind projects. This will be used in my Tailwind From Scratch course.
+Welcome to my GitHub portfolio! Here are some projects I've worked on:
 
-## Usage
+- [Bookmark]((https://github.com/Malsorkrasniqi/Bookmark)).
+- [Omnifood](https://github.com/Malsorkrasniqi/Omnifood).
+- [Floy](https://github.com/Malsorkrasniqi/Fylo-).
 
-Install dependencies
-
-```
-npm install
-```
-
-Run Tailwind CLI in watch mode
-
-```
-npm run dev
-```
-
-You can use tailwind classes in any .html files in the root directory
-
-Put any custom CSS that you may have in the **src/input.css** file
-
-Add any config values to the **tailwind.config.js** file
-
-To build once, run
-
-```
-npm run build
-```
-
-You only need to deploy your html files and css/style.css
+Contact me:
+- LinkedIn: [Malsor Krasniqi](https://www.linkedin.com/in/malsor-krasniqi-650877223/)
+- Email: Malsorkrasniqi60@gmail.com
