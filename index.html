@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="./JS/sctipt.js" defer></script>
+    <title>Portfolio</title>
+    <link rel="Icon" href="./images/Svg/arrows-move.svg">
+    
+  </head>
+  <body class="overflow-x-hidden  ">
+    
+    <nav id="nav" class="container relative mx-auto p-3 mt-6">
+      <!--  container  for section Logo/nav -->
+      <div class="flex items-center justify-between">
+       
+        <h2 class="z-50 text-3xl transition duration-200 font-normal hover:text-gray-500 hover:scale-110 decoration-slate-200">Malsor Krasniqi</h2>
+        <div>
+
+        
+        <!-- Nav for md  -->
+        <div class="hidden items-center space-x-9 p-8 md:flex">
+          <a
+            href="#aboutMe "
+            class="text-2xl transition duration-200 hover:scale-105 hover:rotate-6 hover:text-sky-500"
+          >
+            About
+          </a>
+          <a
+            href="#experience "
+            class="text-2xl transition duration-200 hover:scale-105 hover:-rotate-6 hover:text-teal-400"
+          >
+            Experience
+          </a>
+          <a
+            href="#Projects "
+            class="text-2xl transition duration-200 hover:scale-105 hover:rotate-6 hover:text-indigo-400"
+          >
+            Projects
+          </a>
+          <a
+            href="#ContactMe "
+            class="text-2xl transition duration-200 hover:scale-105 hover:-rotate-6 hover:text-pink-400"
+          >
+            Contact
+          </a>
+        </div>
+      </div>
+
+      <!-- Hamburger  Menu--><!-- Hamburger Button -->
+        <button
+          id="menu-btn"
+          class="z-30 block md:hidden focus:outline-none hamburger"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div> 
+      <!-- Mobile Menu -->
+      <div
+        id="menu"
+        class="fixed inset-0  z-20 hidden flex-col items-center text-2xl  self-end w-full h-full m-h-screen
+          px-6 py-1 pt-24 pb-4  text-black  divide-y divide-gray-900 opacity-90 bg-gray-600"
+      >
+        <div class="w-full py-5 text-center mt-9">
+          <a href="#aboutMe" class="block hover:text-sky-500">About</a>
+        </div>
+        <div class="w-full py-5 text-center">
+          <a href="#experience" class="block hover:text-teal-400">Experience</a>
+        </div>
+        <div class="w-full py-5 text-center">
+          <a href="#Projects" class="block hover:text-indigo-400">Projects</a>
+        </div>
+        <div class="w-full py-5 text-center">
+          <a href="#ContactMe" class="block hover:text-pink-400">Contact</a>
+        </div>
+      </div>
+        </div>
+
+    </nav>
+    <!-- Hero Sectio -->
+    <section id="hero">
+      <!-- Hero Container -->
+      <div
+        class="container flex flex-col mx-auto items-center justify-center lg:space-x-40 lg:flex-row mt-28"
+      >
+        <div>
+          <img src="./images/Profil3M.jpg" alt="" class="w-60 md:w-72 lg:w-96 rounded-full hover:scale-105 
+          transition duration-200 shadow-2xl shadow-gray-800" />
+        </div>
+        <!-- Content  -->
+          <div class="flex flex-col items-center justify-center space-y-2 mt-12">
+            <h4 class="text-lg font-semibold  text-gray-700">Hello, I'm</h4>
+            <h2 class="font-semibold text-3xl md:text-4xl lg:text-5xl">Malsor Krasniqi</h2>
+            <h3 class="text-2xl font-bold text-gray-500">Web developer</h3>
+          
+          <!-- Buttens -->
+          <div class="flex items-center justify-center space-x-4 mt-6">
+            <a
+              href="/images/CV/Malsor Krasniqi CV.pdf" 
+              target="_blank"
+              class="text-sm font-semibold py-4 px-7 rounded-full border
+               border-gray-900 bg-white text-gray-900 hover:bg-gray-900 hover:text-white transition duration-300"
+            >
+              Download CV
+            </a>
+            <a
+              href="#ContactMe"
+              class="text-sm font-semibold text-white py-4 px-7 rounded-full border
+               border-gray-400 bg-gray-800 hover:bg-black transition duration-200"
+            >
+              Contact Info
+            </a>
+          </div>
+          
+          <!-- Icone -->
+          <div class="flex items-center justify-center space-x-5 mt-28">
+            <a href="https://www.linkedin.com/in/malsor-krasniqi-650877223/" target="_blank">
+
+            
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              
+              width="32"
+              height="32"
+              fill="currentColor"
+              class="bi bi-linkedin"
+              viewBox="0 0 19 16"
+            >
+              <path
+                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 
+          .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 
+          12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4
+          3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 
+          1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+              />
+            </svg>
+            </a>
+            <a href="https://github.com/Malsorkrasniqi" target="_blank">
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="currentColor"
+              class="bi bi-github"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+              />
+            </svg>
+            </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me  -->
+    <section id="aboutMe">
+      <!-- Div 1 -->
+      <div class=" container mx-auto mt-64 md:mb-52   ">  
+        <h3 class=" text-gray-600 text-center ">Get To Know More</h3>
+        <h2 class=" text-4xl md:text-6xl font-bold  text-center">About Me</h2>
+        <!-- Image  -->
+
+          <div class="lg:flex lg:mt-44">
+            <!-- Qyky div osht baba  -->
+          <div class=" flex flex-col items-center justify-center mt-2 lg:w-2/5 "> 
+            <img src="./images/Profili.M.jfif" alt="" class="w-56 md:w-72 lg:w-96 rounded-3xl ">
+          </div>
+          <!-- Container -->
+          <div class=" lg:w-3/5">
+            <!-- Div i cili i dan elementet -->
+            <div class="flex items-center justify-center space-x-8 mx-7 my-5 " >
+               <div class="flex flex-col p-5 w-full h-38  justify-center items-center border border-gray-600 rounded-3xl">
+                <!-- Box 1 -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-award" viewBox="0 0 16 16">
+                  <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702z"/>
+                  <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"/>
+                </svg>
+                <h1 class="text-xl font-semibold ">Experience </h1>
+                <h3 class=" text-center text-gray-500">4+ years</h3>
+                <h3 class=" text-center text-gray-500">Frontend  </h3>
+                <h3 class=" text-center text-gray-500">Backend  </h3>
+                
+                </div>
+              <div class="flex flex-col p-5 w-full h-38  justify-center items-center border border-gray-600 rounded-3xl">
+                <!-- Box 2-->
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-person-vcard-fill" viewBox="0 0 16 16">
+                  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
+                </svg>
+                <h1 class="text-xl font-semibold mt-1">Education </h1>
+                <h3 class="text-center text-gray-500">Bachelors Degree </h3>
+                <h3 class="text-center text-gray-500">Courses</h3>
+                <h3 class="text-center text-gray-500">Certificate</h3>
+              </div>
+            </div>
+            <!-- Texti About me  -->
+            <div>
+              <p class="text-xl text-center text-gray-600 m-5">With over four years of hands-on experience in both front-end 
+                and back-end development, I bring a versatile skill set and a passion for crafting robust and
+                 scalable solutions. My journey in software engineering has equipped me with proficiency in a 
+                 wide array of technologies, enabling me to tackle challenges across the entire development stack.</p>
+            </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- Experience  section-->
+    <section id="experience">
+      <h3 class=" text-gray-600 mt-28 text-center ">Explore My</h3>
+      <h1 class=" text-4xl md:text-6xl  font-semibold  text-center">Experience</h1>
+        <!-- Experience container -->
+      <div class="container mx-auto ">
+        <!-- article-container -->
+        <div class="flex flex-col md:flex-row m-6 gap-5  ">
+          <!-- details-container 1 -->
+          <div class=" p-6 mb-8 border  border-black rounded-3xl">
+              <h3 class="text-2xl font-semibold text-gray-600 text-center mb-10">Frontend Development</h3>
+              <div class="flex flex-row  flex-wrap justify-around gap-10 ">
+                <!-- Box 1 -->
+                <article class="flex w-40 justify-around gap-2" >
+                  <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="24" height="24" fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55879 3.6972C10.7552 2.02216 13.2447 2.02216 14.4412 3.6972L14.6317 3.96387C14.8422 4.25867 15.1958 4.41652 15.5558 4.37652L16.4048 4.28218C18.3156 4.06988 19.9301 5.68439 19.7178 7.59513L19.6235 8.44415C19.5835 8.8042 19.7413 9.15774 20.0361 9.36831L20.3028 9.55879C21.9778 10.7552 21.9778 13.2447 20.3028 14.4412L20.0361 14.6317C19.7413 14.8422 19.5835 15.1958 19.6235 15.5558L19.7178 16.4048C19.9301 18.3156 18.3156 19.9301 16.4048 19.7178L15.5558 19.6235C15.1958 19.5835 14.8422 19.7413 14.6317 20.0361L14.4412 20.3028C13.2447 21.9778 10.7553 21.9778 9.55879 20.3028L9.36831 20.0361C9.15774 19.7413 8.8042 19.5835 8.44414 19.6235L7.59513 19.7178C5.68439 19.9301 4.06988 18.3156 4.28218 16.4048L4.37652 15.5558C4.41652 15.1958 4.25867 14.8422 3.96387 14.6317L3.6972 14.4412C2.02216 13.2447 2.02216 10.7553 3.6972 9.55879L3.96387 9.36831C4.25867 9.15774 4.41652 8.8042 4.37652 8.44414L4.28218 7.59513C4.06988 5.68439 5.68439 4.06988 7.59513 4.28218L8.44415 4.37652C8.8042 4.41652 9.15774 4.25867 9.36831 3.96387L9.55879 3.6972ZM15.7071 9.29289C16.0976 9.68342 16.0976 10.3166 15.7071 10.7071L11.8882 14.526C11.3977 15.0166 10.6023 15.0166 10.1118 14.526L8.29289 12.7071C7.90237 12.3166 7.90237 11.6834 8.29289 11.2929C8.68342 10.9024 9.31658 10.9024 9.70711 11.2929L11 12.5858L14.2929 9.29289C14.6834 8.90237 15.3166 8.90237 15.7071 9.29289Z" fill="#323232"/>
+              </svg>
+                <div>
+                  <h1 class="text-lg font-bold">HTML</h1>
+                  <p class="text-gray-500">Experienced</p>
+                </div>
+              </article>
+              <!-- Box 2 -->
+              <article class="flex w-40 justify-around gap-2" >
+                <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="24" height="24" fill="white"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55879 3.6972C10.7552 2.02216 13.2447 2.02216 14.4412 3.6972L14.6317 3.96387C14.8422 4.25867 15.1958 4.41652 15.5558 4.37652L16.4048 4.28218C18.3156 4.06988 19.9301 5.68439 19.7178 7.59513L19.6235 8.44415C19.5835 8.8042 19.7413 9.15774 20.0361 9.36831L20.3028 9.55879C21.9778 10.7552 21.9778 13.2447 20.3028 14.4412L20.0361 14.6317C19.7413 14.8422 19.5835 15.1958 19.6235 15.5558L19.7178 16.4048C19.9301 18.3156 18.3156 19.9301 16.4048 19.7178L15.5558 19.6235C15.1958 19.5835 14.8422 19.7413 14.6317 20.0361L14.4412 20.3028C13.2447 21.9778 10.7553 21.9778 9.55879 20.3028L9.36831 20.0361C9.15774 19.7413 8.8042 19.5835 8.44414 19.6235L7.59513 19.7178C5.68439 19.9301 4.06988 18.3156 4.28218 16.4048L4.37652 15.5558C4.41652 15.1958 4.25867 14.8422 3.96387 14.6317L3.6972 14.4412C2.02216 13.2447 2.02216 10.7553 3.6972 9.55879L3.96387 9.36831C4.25867 9.15774 4.41652 8.8042 4.37652 8.44414L4.28218 7.59513C4.06988 5.68439 5.68439 4.06988 7.59513 4.28218L8.44415 4.37652C8.8042 4.41652 9.15774 4.25867 9.36831 3.96387L9.55879 3.6972ZM15.7071 9.29289C16.0976 9.68342 16.0976 10.3166 15.7071 10.7071L11.8882 14.526C11.3977 15.0166 10.6023 15.0166 10.1118 14.526L8.29289 12.7071C7.90237 12.3166 7.90237 11.6834 8.29289 11.2929C8.68342 10.9024 9.31658 10.9024 9.70711 11.2929L11 12.5858L14.2929 9.29289C14.6834 8.90237 15.3166 8.90237 15.7071 9.29289Z" fill="#323232"/>
+                </svg>
+                <div>
+                  <h1 class="text-lg font-bold">CSS</h1>
+                  <p class="text-gray-500">Experienced</p>
+                </div>
+              </article>
+              <!-- Box 3 -->
+              <article class="flex w-40 justify-around gap-2" >
+                <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="24" height="24" fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55879 3.6972C10.7552 2.02216 13.2447 2.02216 14.4412 3.6972L14.6317 3.96387C14.8422 4.25867 15.1958 4.41652 15.5558 4.37652L16.4048 4.28218C18.3156 4.06988 19.9301 5.68439 19.7178 7.59513L19.6235 8.44415C19.5835 8.8042 19.7413 9.15774 20.0361 9.36831L20.3028 9.55879C21.9778 10.7552 21.9778 13.2447 20.3028 14.4412L20.0361 14.6317C19.7413 14.8422 19.5835 15.1958 19.6235 15.5558L19.7178 16.4048C19.9301 18.3156 18.3156 19.9301 16.4048 19.7178L15.5558 19.6235C15.1958 19.5835 14.8422 19.7413 14.6317 20.0361L14.4412 20.3028C13.2447 21.9778 10.7553 21.9778 9.55879 20.3028L9.36831 20.0361C9.15774 19.7413 8.8042 19.5835 8.44414 19.6235L7.59513 19.7178C5.68439 19.9301 4.06988 18.3156 4.28218 16.4048L4.37652 15.5558C4.41652 15.1958 4.25867 14.8422 3.96387 14.6317L3.6972 14.4412C2.02216 13.2447 2.02216 10.7553 3.6972 9.55879L3.96387 9.36831C4.25867 9.15774 4.41652 8.8042 4.37652 8.44414L4.28218 7.59513C4.06988 5.68439 5.68439 4.06988 7.59513 4.28218L8.44415 4.37652C8.8042 4.41652 9.15774 4.25867 9.36831 3.96387L9.55879 3.6972ZM15.7071 9.29289C16.0976 9.68342 16.0976 10.3166 15.7071 10.7071L11.8882 14.526C11.3977 15.0166 10.6023 15.0166 10.1118 14.526L8.29289 12.7071C7.90237 12.3166 7.90237 11.6834 8.29289 11.2929C8.68342 10.9024 9.31658 10.9024 9.70711 11.2929L11 12.5858L14.2929 9.29289C14.6834 8.90237 15.3166 8.90237 15.7071 9.29289Z" fill="#323232"/>
+                </svg>
+                <div>
+                  <h1 class="text-lg font-bold">Tailwind</h1>
+                  <p class="text-gray-500">Experienced</p>
+                </div>
+              </article>
+              <!-- Box 4 -->
+              <article class="flex w-40 justify-around gap-2" >
+                <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="24" height="24" fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55879 3.6972C10.7552 2.02216 13.2447 2.02216 14.4412 3.6972L14.6317 3.96387C14.8422 4.25867 15.1958 4.41652 15.5558 4.37652L16.4048 4.28218C18.3156 4.06988 19.9301 5.68439 19.7178 7.59513L19.6235 8.44415C19.5835 8.8042 19.7413 9.15774 20.0361 9.36831L20.3028 9.55879C21.9778 10.7552 21.9778 13.2447 20.3028 14.4412L20.0361 14.6317C19.7413 14.8422 19.5835 15.1958 19.6235 15.5558L19.7178 16.4048C19.9301 18.3156 18.3156 19.9301 16.4048 19.7178L15.5558 19.6235C15.1958 19.5835 14.8422 19.7413 14.6317 20.0361L14.4412 20.3028C13.2447 21.9778 10.7553 21.9778 9.55879 20.3028L9.36831 20.0361C9.15774 19.7413 8.8042 19.5835 8.44414 19.6235L7.59513 19.7178C5.68439 19.9301 4.06988 18.3156 4.28218 16.4048L4.37652 15.5558C4.41652 15.1958 4.25867 14.8422 3.96387 14.6317L3.6972 14.4412C2.02216 13.2447 2.02216 10.7553 3.6972 9.55879L3.96387 9.36831C4.25867 9.15774 4.41652 8.8042 4.37652 8.44414L4.28218 7.59513C4.06988 5.68439 5.68439 4.06988 7.59513 4.28218L8.44415 4.37652C8.8042 4.41652 9.15774 4.25867 9.36831 3.96387L9.55879 3.6972ZM15.7071 9.29289C16.0976 9.68342 16.0976 10.3166 15.7071 10.7071L11.8882 14.526C11.3977 15.0166 10.6023 15.0166 10.1118 14.526L8.29289 12.7071C7.90237 12.3166 7.90237 11.6834 8.29289 11.2929C8.68342 10.9024 9.31658 10.9024 9.70711 11.2929L11 12.5858L14.2929 9.29289C14.6834 8.90237 15.3166 8.90237 15.7071 9.29289Z" fill="#323232"/>
+                </svg>
+                <div>
+                  <h1 class="text-lg font-bold">JavaScript</h1>
+                  <p class="text-gray-500">Basic</p>
+                </div>
+              </article>
+              <!-- Box 5 -->
+              <article class="flex w-40 justify-around gap-2" >
+                <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="24" height="24" fill="white"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55879 3.6972C10.7552 2.02216 13.2447 2.02216 14.4412 3.6972L14.6317 3.96387C14.8422 4.25867 15.1958 4.41652 15.5558 4.37652L16.4048 4.28218C18.3156 4.06988 19.9301 5.68439 19.7178 7.59513L19.6235 8.44415C19.5835 8.8042 19.7413 9.15774 20.0361 9.36831L20.3028 9.55879C21.9778 10.7552 21.9778 13.2447 20.3028 14.4412L20.0361 14.6317C19.7413 14.8422 19.5835 15.1958 19.6235 15.5558L19.7178 16.4048C19.9301 18.3156 18.3156 19.9301 16.4048 19.7178L15.5558 19.6235C15.1958 19.5835 14.8422 19.7413 14.6317 20.0361L14.4412 20.3028C13.2447 21.9778 10.7553 21.9778 9.55879 20.3028L9.36831 20.0361C9.15774 19.7413 8.8042 19.5835 8.44414 19.6235L7.59513 19.7178C5.68439 19.9301 4.06988 18.3156 4.28218 16.4048L4.37652 15.5558C4.41652 15.1958 4.25867 14.8422 3.96387 14.6317L3.6972 14.4412C2.02216 13.2447 2.02216 10.7553 3.6972 9.55879L3.96387 9.36831C4.25867 9.15774 4.41652 8.8042 4.37652 8.44414L4.28218 7.59513C4.06988 5.68439 5.68439 4.06988 7.59513 4.28218L8.44415 4.37652C8.8042 4.41652 9.15774 4.25867 9.36831 3.96387L9.55879 3.6972ZM15.7071 9.29289C16.0976 9.68342 16.0976 10.3166 15.7071 10.7071L11.8882 14.526C11.3977 15.0166 10.6023 15.0166 10.1118 14.526L8.29289 12.7071C7.90237 12.3166 7.90237 11.6834 8.29289 11.2929C8.68342 10.9024 9.31658 10.9024 9.70711 11.2929L11 12.5858L14.2929 9.29289C14.6834 8.90237 15.3166 8.90237 15.7071 9.29289Z" fill="#323232"/>
+                </svg>
+                <div>
+                  <h1 class="text-lg font-bold">TypeScript</h1>
+                  <p class="text-gray-500">Basic</p>
+                </div>
+              </article>
+              <!-- Box 6 -->
+              <article class="flex w-40 justify-around gap-2" >
+                <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="24" height="24" fill="white"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55879 3.6972C10.7552 2.02216 13.2447 2.02216 14.4412 3.6972L14.6317 3.96387C14.8422 4.25867 15.1958 4.41652 15.5558 4.37652L16.4048 4.28218C18.3156 4.06988 19.9301 5.68439 19.7178 7.59513L19.6235 8.44415C19.5835 8.8042 19.7413 9.15774 20.0361 9.36831L20.3028 9.55879C21.9778 10.7552 21.9778 13.2447 20.3028 14.4412L20.0361 14.6317C19.7413 14.8422 19.5835 15.1958 19.6235 15.5558L19.7178 16.4048C19.9301 18.3156 18.3156 19.9301 16.4048 19.7178L15.5558 19.6235C15.1958 19.5835 14.8422 19.7413 14.6317 20.0361L14.4412 20.3028C13.2447 21.9778 10.7553 21.9778 9.55879 20.3028L9.36831 20.0361C9.15774 19.7413 8.8042 19.5835 8.44414 19.6235L7.59513 19.7178C5.68439 19.9301 4.06988 18.3156 4.28218 16.4048L4.37652 15.5558C4.41652 15.1958 4.25867 14.8422 3.96387 14.6317L3.6972 14.4412C2.02216 13.2447 2.02216 10.7553 3.6972 9.55879L3.96387 9.36831C4.25867 9.15774 4.41652 8.8042 4.37652 8.44414L4.28218 7.59513C4.06988 5.68439 5.68439 4.06988 7.59513 4.28218L8.44415 4.37652C8.8042 4.41652 9.15774 4.25867 9.36831 3.96387L9.55879 3.6972ZM15.7071 9.29289C16.0976 9.68342 16.0976 10.3166 15.7071 10.7071L11.8882 14.526C11.3977 15.0166 10.6023 15.0166 10.1118 14.526L8.29289 12.7071C7.90237 12.3166 7.90237 11.6834 8.29289 11.2929C8.68342 10.9024 9.31658 10.9024 9.70711 11.2929L11 12.5858L14.2929 9.29289C14.6834 8.90237 15.3166 8.90237 15.7071 9.29289Z" fill="#323232"/>
+                </svg>
+                <div>
+                  <h1 class="text-lg font-bold">UI/UX Design</h1>
+                  <p class="text-gray-500">Experienced</p>
+                </div>
+              </div>
+              </article>
+          </div>
+          <!-- details-container 2  -->
+            <div class=" p-6 mb-8 border  border-black rounded-3xl">
+              <h3 class="text-2xl font-semibold text-gray-600 text-center mb-10">Backend Development</h3>
+              <div class="flex flex-row  flex-wrap justify-around gap-10 ">
+                <!-- Box 1 -->
+                <article class="flex w-40 justify-around gap-2" >
+                  <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="24" height="24" fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55879 3.6972C10.7552 2.02216 13.2447 2.02216 14.4412 3.6972L14.6317 3.96387C14.8422 4.25867 15.1958 4.41652 15.5558 4.37652L16.4048 4.28218C18.3156 4.06988 19.9301 5.68439 19.7178 7.59513L19.6235 8.44415C19.5835 8.8042 19.7413 9.15774 20.0361 9.36831L20.3028 9.55879C21.9778 10.7552 21.9778 13.2447 20.3028 14.4412L20.0361 14.6317C19.7413 14.8422 19.5835 15.1958 19.6235 15.5558L19.7178 16.4048C19.9301 18.3156 18.3156 19.9301 16.4048 19.7178L15.5558 19.6235C15.1958 19.5835 14.8422 19.7413 14.6317 20.0361L14.4412 20.3028C13.2447 21.9778 10.7553 21.9778 9.55879 20.3028L9.36831 20.0361C9.15774 19.7413 8.8042 19.5835 8.44414 19.6235L7.59513 19.7178C5.68439 19.9301 4.06988 18.3156 4.28218 16.4048L4.37652 15.5558C4.41652 15.1958 4.25867 14.8422 3.96387 14.6317L3.6972 14.4412C2.02216 13.2447 2.02216 10.7553 3.6972 9.55879L3.96387 9.36831C4.25867 9.15774 4.41652 8.8042 4.37652 8.44414L4.28218 7.59513C4.06988 5.68439 5.68439 4.06988 7.59513 4.28218L8.44415 4.37652C8.8042 4.41652 9.15774 4.25867 9.36831 3.96387L9.55879 3.6972ZM15.7071 9.29289C16.0976 9.68342 16.0976 10.3166 15.7071 10.7071L11.8882 14.526C11.3977 15.0166 10.6023 15.0166 10.1118 14.526L8.29289 12.7071C7.90237 12.3166 7.90237 11.6834 8.29289 11.2929C8.68342 10.9024 9.31658 10.9024 9.70711 11.2929L11 12.5858L14.2929 9.29289C14.6834 8.90237 15.3166 8.90237 15.7071 9.29289Z" fill="#323232"/>
+              </svg>
+                <div>
+                  <h1 class="text-lg font-bold">Python</h1>
+                  <p class="text-gray-500">Experienced</p>
+                </div>
+              </article>
+              <!-- Box 2 -->
+              <article class="flex w-40 justify-around gap-2" >
+                <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="24" height="24" fill="white"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55879 3.6972C10.7552 2.02216 13.2447 2.02216 14.4412 3.6972L14.6317 3.96387C14.8422 4.25867 15.1958 4.41652 15.5558 4.37652L16.4048 4.28218C18.3156 4.06988 19.9301 5.68439 19.7178 7.59513L19.6235 8.44415C19.5835 8.8042 19.7413 9.15774 20.0361 9.36831L20.3028 9.55879C21.9778 10.7552 21.9778 13.2447 20.3028 14.4412L20.0361 14.6317C19.7413 14.8422 19.5835 15.1958 19.6235 15.5558L19.7178 16.4048C19.9301 18.3156 18.3156 19.9301 16.4048 19.7178L15.5558 19.6235C15.1958 19.5835 14.8422 19.7413 14.6317 20.0361L14.4412 20.3028C13.2447 21.9778 10.7553 21.9778 9.55879 20.3028L9.36831 20.0361C9.15774 19.7413 8.8042 19.5835 8.44414 19.6235L7.59513 19.7178C5.68439 19.9301 4.06988 18.3156 4.28218 16.4048L4.37652 15.5558C4.41652 15.1958 4.25867 14.8422 3.96387 14.6317L3.6972 14.4412C2.02216 13.2447 2.02216 10.7553 3.6972 9.55879L3.96387 9.36831C4.25867 9.15774 4.41652 8.8042 4.37652 8.44414L4.28218 7.59513C4.06988 5.68439 5.68439 4.06988 7.59513 4.28218L8.44415 4.37652C8.8042 4.41652 9.15774 4.25867 9.36831 3.96387L9.55879 3.6972ZM15.7071 9.29289C16.0976 9.68342 16.0976 10.3166 15.7071 10.7071L11.8882 14.526C11.3977 15.0166 10.6023 15.0166 10.1118 14.526L8.29289 12.7071C7.90237 12.3166 7.90237 11.6834 8.29289 11.2929C8.68342 10.9024 9.31658 10.9024 9.70711 11.2929L11 12.5858L14.2929 9.29289C14.6834 8.90237 15.3166 8.90237 15.7071 9.29289Z" fill="#323232"/>
+                </svg>
+                <div>
+                  <h1 class="text-lg font-bold">Django</h1>
+                  <p class="text-gray-500">Experienced</p>
+                </div>
+              </article>
+              <!-- Box 3 -->
+              <article class="flex w-40 justify-around gap-2" >
+                <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="24" height="24" fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55879 3.6972C10.7552 2.02216 13.2447 2.02216 14.4412 3.6972L14.6317 3.96387C14.8422 4.25867 15.1958 4.41652 15.5558 4.37652L16.4048 4.28218C18.3156 4.06988 19.9301 5.68439 19.7178 7.59513L19.6235 8.44415C19.5835 8.8042 19.7413 9.15774 20.0361 9.36831L20.3028 9.55879C21.9778 10.7552 21.9778 13.2447 20.3028 14.4412L20.0361 14.6317C19.7413 14.8422 19.5835 15.1958 19.6235 15.5558L19.7178 16.4048C19.9301 18.3156 18.3156 19.9301 16.4048 19.7178L15.5558 19.6235C15.1958 19.5835 14.8422 19.7413 14.6317 20.0361L14.4412 20.3028C13.2447 21.9778 10.7553 21.9778 9.55879 20.3028L9.36831 20.0361C9.15774 19.7413 8.8042 19.5835 8.44414 19.6235L7.59513 19.7178C5.68439 19.9301 4.06988 18.3156 4.28218 16.4048L4.37652 15.5558C4.41652 15.1958 4.25867 14.8422 3.96387 14.6317L3.6972 14.4412C2.02216 13.2447 2.02216 10.7553 3.6972 9.55879L3.96387 9.36831C4.25867 9.15774 4.41652 8.8042 4.37652 8.44414L4.28218 7.59513C4.06988 5.68439 5.68439 4.06988 7.59513 4.28218L8.44415 4.37652C8.8042 4.41652 9.15774 4.25867 9.36831 3.96387L9.55879 3.6972ZM15.7071 9.29289C16.0976 9.68342 16.0976 10.3166 15.7071 10.7071L11.8882 14.526C11.3977 15.0166 10.6023 15.0166 10.1118 14.526L8.29289 12.7071C7.90237 12.3166 7.90237 11.6834 8.29289 11.2929C8.68342 10.9024 9.31658 10.9024 9.70711 11.2929L11 12.5858L14.2929 9.29289C14.6834 8.90237 15.3166 8.90237 15.7071 9.29289Z" fill="#323232"/>
+                </svg>
+                <div>
+                  <h1 class="text-lg font-bold">Sql</h1>
+                  <p class="text-gray-500">Experienced</p>
+                </div>
+              </article>
+              <!-- Box 4 -->
+              <article class="flex w-40 justify-around gap-2" >
+                <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="24" height="24" fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55879 3.6972C10.7552 2.02216 13.2447 2.02216 14.4412 3.6972L14.6317 3.96387C14.8422 4.25867 15.1958 4.41652 15.5558 4.37652L16.4048 4.28218C18.3156 4.06988 19.9301 5.68439 19.7178 7.59513L19.6235 8.44415C19.5835 8.8042 19.7413 9.15774 20.0361 9.36831L20.3028 9.55879C21.9778 10.7552 21.9778 13.2447 20.3028 14.4412L20.0361 14.6317C19.7413 14.8422 19.5835 15.1958 19.6235 15.5558L19.7178 16.4048C19.9301 18.3156 18.3156 19.9301 16.4048 19.7178L15.5558 19.6235C15.1958 19.5835 14.8422 19.7413 14.6317 20.0361L14.4412 20.3028C13.2447 21.9778 10.7553 21.9778 9.55879 20.3028L9.36831 20.0361C9.15774 19.7413 8.8042 19.5835 8.44414 19.6235L7.59513 19.7178C5.68439 19.9301 4.06988 18.3156 4.28218 16.4048L4.37652 15.5558C4.41652 15.1958 4.25867 14.8422 3.96387 14.6317L3.6972 14.4412C2.02216 13.2447 2.02216 10.7553 3.6972 9.55879L3.96387 9.36831C4.25867 9.15774 4.41652 8.8042 4.37652 8.44414L4.28218 7.59513C4.06988 5.68439 5.68439 4.06988 7.59513 4.28218L8.44415 4.37652C8.8042 4.41652 9.15774 4.25867 9.36831 3.96387L9.55879 3.6972ZM15.7071 9.29289C16.0976 9.68342 16.0976 10.3166 15.7071 10.7071L11.8882 14.526C11.3977 15.0166 10.6023 15.0166 10.1118 14.526L8.29289 12.7071C7.90237 12.3166 7.90237 11.6834 8.29289 11.2929C8.68342 10.9024 9.31658 10.9024 9.70711 11.2929L11 12.5858L14.2929 9.29289C14.6834 8.90237 15.3166 8.90237 15.7071 9.29289Z" fill="#323232"/>
+                </svg>
+                <div>
+                  <h1 class="text-lg font-bold">Java</h1>
+                  <p class="text-gray-500">Intermediate</p>
+                </div>
+              </article>
+              <!-- Box 5 -->
+              <article class="flex w-40 justify-around gap-2" >
+                <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="24" height="24" fill="white"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55879 3.6972C10.7552 2.02216 13.2447 2.02216 14.4412 3.6972L14.6317 3.96387C14.8422 4.25867 15.1958 4.41652 15.5558 4.37652L16.4048 4.28218C18.3156 4.06988 19.9301 5.68439 19.7178 7.59513L19.6235 8.44415C19.5835 8.8042 19.7413 9.15774 20.0361 9.36831L20.3028 9.55879C21.9778 10.7552 21.9778 13.2447 20.3028 14.4412L20.0361 14.6317C19.7413 14.8422 19.5835 15.1958 19.6235 15.5558L19.7178 16.4048C19.9301 18.3156 18.3156 19.9301 16.4048 19.7178L15.5558 19.6235C15.1958 19.5835 14.8422 19.7413 14.6317 20.0361L14.4412 20.3028C13.2447 21.9778 10.7553 21.9778 9.55879 20.3028L9.36831 20.0361C9.15774 19.7413 8.8042 19.5835 8.44414 19.6235L7.59513 19.7178C5.68439 19.9301 4.06988 18.3156 4.28218 16.4048L4.37652 15.5558C4.41652 15.1958 4.25867 14.8422 3.96387 14.6317L3.6972 14.4412C2.02216 13.2447 2.02216 10.7553 3.6972 9.55879L3.96387 9.36831C4.25867 9.15774 4.41652 8.8042 4.37652 8.44414L4.28218 7.59513C4.06988 5.68439 5.68439 4.06988 7.59513 4.28218L8.44415 4.37652C8.8042 4.41652 9.15774 4.25867 9.36831 3.96387L9.55879 3.6972ZM15.7071 9.29289C16.0976 9.68342 16.0976 10.3166 15.7071 10.7071L11.8882 14.526C11.3977 15.0166 10.6023 15.0166 10.1118 14.526L8.29289 12.7071C7.90237 12.3166 7.90237 11.6834 8.29289 11.2929C8.68342 10.9024 9.31658 10.9024 9.70711 11.2929L11 12.5858L14.2929 9.29289C14.6834 8.90237 15.3166 8.90237 15.7071 9.29289Z" fill="#323232"/>
+                </svg>
+                <div>
+                  <h1 class="text-lg font-bold">C# .NET   </h1>
+                  <p class="text-gray-500">Intermediate</p>
+                </div>
+              </article>
+              <!-- Box 6 -->
+              <article class="flex w-40 justify-around gap-2" >
+                <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="24" height="24" fill="white"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55879 3.6972C10.7552 2.02216 13.2447 2.02216 14.4412 3.6972L14.6317 3.96387C14.8422 4.25867 15.1958 4.41652 15.5558 4.37652L16.4048 4.28218C18.3156 4.06988 19.9301 5.68439 19.7178 7.59513L19.6235 8.44415C19.5835 8.8042 19.7413 9.15774 20.0361 9.36831L20.3028 9.55879C21.9778 10.7552 21.9778 13.2447 20.3028 14.4412L20.0361 14.6317C19.7413 14.8422 19.5835 15.1958 19.6235 15.5558L19.7178 16.4048C19.9301 18.3156 18.3156 19.9301 16.4048 19.7178L15.5558 19.6235C15.1958 19.5835 14.8422 19.7413 14.6317 20.0361L14.4412 20.3028C13.2447 21.9778 10.7553 21.9778 9.55879 20.3028L9.36831 20.0361C9.15774 19.7413 8.8042 19.5835 8.44414 19.6235L7.59513 19.7178C5.68439 19.9301 4.06988 18.3156 4.28218 16.4048L4.37652 15.5558C4.41652 15.1958 4.25867 14.8422 3.96387 14.6317L3.6972 14.4412C2.02216 13.2447 2.02216 10.7553 3.6972 9.55879L3.96387 9.36831C4.25867 9.15774 4.41652 8.8042 4.37652 8.44414L4.28218 7.59513C4.06988 5.68439 5.68439 4.06988 7.59513 4.28218L8.44415 4.37652C8.8042 4.41652 9.15774 4.25867 9.36831 3.96387L9.55879 3.6972ZM15.7071 9.29289C16.0976 9.68342 16.0976 10.3166 15.7071 10.7071L11.8882 14.526C11.3977 15.0166 10.6023 15.0166 10.1118 14.526L8.29289 12.7071C7.90237 12.3166 7.90237 11.6834 8.29289 11.2929C8.68342 10.9024 9.31658 10.9024 9.70711 11.2929L11 12.5858L14.2929 9.29289C14.6834 8.90237 15.3166 8.90237 15.7071 9.29289Z" fill="#323232"/>
+                </svg>
+                <div>
+                  <h1 class="text-lg font-bold">Git</h1>
+                  <p class="text-gray-500">Experienced</p>
+                </div>
+              </div>
+              </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!--Section Projects  -->
+    <section id="Projects">
+      <h3 class=" text-gray-600 mt-28  text-center ">Browse My Recent</h3>
+      <h1 class=" text-4xl md:text-6xl  font-semibold  text-center">Projects</h1>
+      <!-- Container Projoctes -->
+        <div class="container mx-auto mt-10">
+          <!-- Grid div -->
+          <div class="grid grid-cols-2 grid-rows-2 md:grid-cols-3">
+            
+            <div class=" flex flex-col flex-wrap  items-center justify-center  border
+             border-gray-500 bg-gray-50 rounded-2xl m-6">
+             <div class="p-6">
+
+               <img src="./images/Bookmark IMage.PNG" alt="" class="w-52 rounded-lg transition duration-200 hover:scale-110 hover:shadow-lg ">
+               <h2 class="text-2xl text-center font-semibold mt-5 ">Bookmark</h2>
+               <div  class="flex flex-col space-y-3 mt-3">
+                 
+                <a class=" py-3 border border-gray-400 rounded-full transition 
+                 duration-300 hover:text-white hover:bg-gray-800 text-sm font-semibold text-center " target="_blank" href="https://github.com/Malsorkrasniqi/Bookmark" >Github</a>
+
+
+
+                 <a class=" py-3 border border-gray-400 rounded-full transition 
+                 duration-300 hover:text-white hover:bg-gray-800 text-center text-sm font-semibold" target="_blank" href="https://bookmark-malsor-krasniqi.netlify.app/" >Live Demo</a>
+                 
+                </div>
+              </div>
+            </div>
+
+
+
+             <div class=" flex flex-col flex-wrap  items-center justify-center  border
+             border-gray-500 bg-indigo-00 rounded-2xl m-6">
+             <div class="p-6">
+
+               <img src="./images/Floy image.PNG" alt="" class="w-56  rounded-lg transition duration-200 hover:scale-110 hover:shadow-lg ">
+               <h2 class="text-2xl text-center font-semibold mt-5">Floy</h2>
+               <div  class="flex flex-col space-y-3 mt-3">
+                 
+                <a class=" py-3 border border-gray-400 rounded-full transition 
+                 duration-300 hover:text-white hover:bg-gray-800 text-sm font-semibold text-center " target="_blank" href="https://github.com/Malsorkrasniqi/Fylo-" >GitHub</a>
+                 
+                 <a class=" py-3 border border-gray-400 rounded-full transition 
+                 duration-300 hover:text-white hover:bg-gray-800 text-sm font-semibold text-center "  target="_blank" href="https://fylo-website-malsor-krasniqi.netlify.app/" >Live Demo</a>
+                </div>
+              </div>
+            </div>
+
+
+
+             <div class=" flex flex-col flex-wrap  items-center justify-center  border
+             border-gray-500 bg-gray-50 rounded-2xl m-6">
+             <div class="p-6">
+
+               <img src="./images/Shortly Image.PNG" alt="" class="w-52 rounded-lg transition duration-200 hover:scale-110 hover:shadow-lg ">
+               <h2 class="text-2xl text-center font-semibold mt-5">Shortly</h2>
+               <div  class="flex flex-col space-y-3 mt-3">
+                 <a class=" py-3 border border-gray-400 rounded-full transition 
+                 duration-300 hover:text-white hover:bg-gray-800 text-sm font-semibold text-center " target="_blank" href="https://github.com/Malsorkrasniqi/Shortly" >GitHub</a>
+                 <a class=" py-3 border border-gray-400 rounded-full transition 
+                 duration-300 hover:text-white hover:bg-gray-800 text-sm font-semibold text-center " target="_blank" href="https://shortly-malsor-krasniqi.netlify.app/" >Live Demo</a>
+                 
+                </div>
+              </div>
+            </div>
+
+
+
+             <div class=" flex flex-col flex-wrap  items-center justify-center  border
+             border-gray-500 bg-gray-50 rounded-2xl m-6">
+             <div class="p-6">
+
+               <img src="./images/LoopStudios Image.PNG" alt="" class="w-52 rounded-lg transition duration-200 hover:scale-110 hover:shadow-lg ">
+               <h2 class="text-2xl text-center font-semibold mt-5">LoopStudios</h2>
+               <div  class="flex flex-col space-y-3 mt-3">
+                 <a class=" py-3 border border-gray-400 rounded-full transition 
+                 duration-300 hover:text-white hover:bg-gray-800 text-sm font-semibold text-center " target="_blank" href="https://github.com/Malsorkrasniqi/LoopStudios">GitHub</a>
+                 <a class=" py-3 border border-gray-400 rounded-full transition 
+                 duration-300 hover:text-white hover:bg-gray-800 text-sm font-semibold text-center " target="_blank" href="https://loop-studios-malsor.vercel.app/">Live Demo</a>
+                 
+                </div>
+              </div>
+            </div>
+
+
+
+             <div class=" flex flex-col flex-wrap  items-center justify-center  border
+             border-gray-500 bg-gray-50 rounded-2xl m-6">
+             <div class="p-6">
+
+               <img src="./images/Omnifood Image.PNG" alt="" class="w-52 rounded-lg transition duration-200 hover:scale-110 hover:shadow-lg ">
+               <h2 class="text-2xl text-center font-semibold mt-5">Omnifood</h2>
+               <div  class="flex flex-col space-y-3 mt-3">
+                <a class=" py-3 border border-gray-400 rounded-full transition 
+                 duration-300 hover:text-white hover:bg-gray-800 text-sm font-semibold text-center " target="_blank" href="https://github.com/Malsorkrasniqi/Omnifood">GitHub</a>
+               <a class=" py-3 border border-gray-400 rounded-full transition 
+                 duration-300 hover:text-white hover:bg-gray-800 text-sm font-semibold text-center " target="_blank" href="https://malsorkrasniqi-omnifood.netlify.app/" >Live Demo</a>
+                 
+                </div>
+              </div>
+            </div>
+
+
+             <div class=" flex flex-col flex-wrap  items-center justify-center  border
+             border-gray-500 bg-gray-50 rounded-2xl m-6">
+             <div class="p-6">
+
+               <img src="./images/Guest mY numbre image.PNG" alt="" class="w-52 rounded-lg transition duration-200 hover:scale-110 hover:shadow-lg ">
+               <h2 class="text-2xl text-center font-semibold mt-5">Guess My Number</h2>
+               <div  class="flex flex-col space-y-3 mt-3">
+                 <a class=" py-3 border border-gray-400 rounded-full transition 
+                 duration-300 hover:text-white hover:bg-gray-800 text-sm font-semibold text-center " target="_blank" href="https://github.com/Malsorkrasniqi/Guess-My-Number" >GitHub</a>
+                 <a class=" py-3 border border-gray-400 rounded-full transition 
+                 duration-300 hover:text-white hover:bg-gray-800 text-sm font-semibold text-center " target="_blank" href="https://guess-my-number-malsor-krasniqi.netlify.app/">Live Demo</a>
+                 
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+    
+    </section>
+
+
+    <!-- SEction ContancME -->
+    <section id="ContactMe">
+      <!-- Container Contact -->
+      <div class="container mx-auto max-w-xl mt-32 md:mt-52  ">
+          <!-- Text of Container -->
+        <h3 class=" text-gray-600 text-center ">Get in Touch</h3>
+        <h1 class=" text-4xl md:text-6xl  font-semibold  text-center mb-10">Contact Me</h1>
+        <!-- The main Div  -->
+        <div class="flex items-center justify-center space-x-3 p-3 md:p-5 lg:p-6 border border-gray-700 rounded-full sm:mx-9 ">
+          <!-- Div of the box 1 -->
+          <div class="flex items-center justify-center  space-x-3 " >
+            
+              <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                   width="32px" height="32px" viewBox="0 0 1000.000000 1000.000000"
+                   preserveAspectRatio="xMidYMid meet">
+                   
+                   <g transform="translate(0.000000,1000.000000) scale(0.100000,-0.100000)"
+                   fill="#000000" stroke="none">
+                   <path d="M4755 8993 c-479 -40 -850 -124 -1248 -282 -663 -264 -1271 -730
+                   -1703 -1308 -501 -669 -776 -1451 -801 -2278 -29 -979 289 -1910 913 -2674
+                   119 -146 423 -444 574 -565 950 -757 2134 -1042 3325 -801 767 156 1499 557
+                   2045 1121 903 933 1297 2203 1079 3479 -114 672 -418 1333 -854 1858 -778 937
+                   -1911 1467 -3115 1455 -96 -1 -193 -3 -215 -5z m1823 -2481 c-156 -125 -574
+                   -461 -930 -746 l-648 -518 -822 658 c-453 362 -872 697 -931 746 l-108 88
+                   1861 0 1862 0 -284 -228z m-2687 -873 c548 -438 1010 -804 1027 -813 38 -20
+                   111 -21 156 -2 18 8 487 377 1042 821 l1009 807 3 -1526 c2 -1508 2 -1527 -18
+                   -1566 -11 -21 -36 -51 -57 -67 l-36 -28 -2018 0 -2017 0 -38 30 c-20 17 -45
+                   46 -55 65 -18 33 -19 94 -19 1563 0 1220 3 1527 13 1521 6 -5 460 -367 1008
+                   -805z"/>
+                   </g>
+              </svg>
+              <p><a href="mailto:MalsorKrasniqi60@gmail.com" class=" hover:text-gray-500  hover:border-b-2" >MalsorKrasniqi60@gmail.com</a></p>
+          </div>
+          <!-- Div Of the linkedln-->
+          <div class="flex items-center justify-center space-x-3" >
+
+                  <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                   width="32px" height="32px" viewBox="0 0 512.000000 512.000000"
+                   preserveAspectRatio="xMidYMid meet">
+
+                  <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                  fill="#000000" stroke="none">
+                  <path d="M2315 5109 c-800 -83 -1501 -518 -1927 -1196 -604 -960 -491 -2229
+                  272 -3065 423 -463 951 -740 1585 -830 118 -17 511 -16 635 0 579 80 1097 337
+                  1491 739 130 132 157 163 243 277 256 341 423 757 488 1211 17 118 17 512 0
+                  630 -43 303 -122 561 -247 814 -134 268 -270 459 -483 674 -395 400 -889 649
+                  -1457 733 -123 18 -478 26 -600 13z m-660 -1105 c71 -25 156 -111 180 -184 58
+                  -170 -20 -349 -179 -409 -187 -70 -377 -12 -462 141 -27 49 -29 61 -29 153 0
+                  84 4 107 22 141 47 88 116 144 212 171 59 17 190 10 256 -13z m1900 -859 c101
+                  -28 213 -92 285 -165 77 -78 123 -153 162 -262 55 -157 58 -195 58 -859 l0
+                  -609 -310 0 -310 0 0 548 c0 432 -3 561 -14 613 -26 122 -75 192 -164 236 -79
+                  39 -191 40 -272 2 -72 -34 -132 -96 -172 -177 l-33 -67 -3 -577 -3 -578 -310
+                  0 -309 0 0 940 0 940 310 0 310 0 0 -132 1 -133 25 30 c14 17 43 51 64 77 73
+                  86 217 165 345 188 71 13 269 4 340 -15z m-1737 -957 l2 -938 -315 0 -315 0 0
+                  933 c0 514 3 937 7 940 4 4 144 6 312 5 l306 -3 3 -937z"/>
+                  </g>
+                  </svg>
+                 <p> <a href="https://www.linkedin.com/in/malsor-krasniqi-650877223/" target="_blank" class=" hover:text-gray-500 hover:border-b-2" >Linkedln</a></p>
+          </div>              
+          </div>
+      </div>
+
+      </div>
+    </section>
+
+
+    <!-- Section Fotter -->
+    <footer id="foter" >
+      <div class="container mx-auto mt-32 md:mt-52">
+        <div class="flex flex-col items-center justify-center space-y-5 md:flex-row   md:space-y-0   md:space-x-6 mt-10 ">
+        
+
+
+          <p><a  id="" href="#aboutMe" class=" text-lg md:text-2xl  text-gray-800  duration-100 hover:border-b-2 hover:text-gray-500">About</a></p>
+          <p><a  id="" href="#experience" class=" text-lg md:text-2xl  text-gray-800  duration-100 hover:border-b-2 hover:text-gray-500">Experience</a></p>
+          <p><a  id="" href="#Projects" class=" text-lg md:text-2xl  text-gray-800  duration-100 hover:border-b-2 hover:text-gray-500">Projects</a></p>
+          <p><a  id="" href="#ContactMe" class=" text-lg md:text-2xl  text-gray-800  duration-100 hover:border-b-2 hover:text-gray-500">Contact</a></p>
+          
+        </div>
+        <div class="flex items-center justify-center mb-12 mt-9"> 
+          <p><a  id="" href="" class=" text-md  text-gray-600 ">Copyright © 2024 Malsor Krasniqi. All Rights Reserved.</a></p>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
